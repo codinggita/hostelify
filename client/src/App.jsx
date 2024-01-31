@@ -1,15 +1,10 @@
 // import logo from './logo.svg';
 import './App.css';
-import TextElements from './html/TableElements';
 
 function App() {
-  return (
-    <>
-      { <TextElements/> }
-      
-
-    </>
-  )
+ return(
+  <h1>Hello</h1>
+ )
 }
 
 export default App;
