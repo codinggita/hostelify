@@ -8,9 +8,7 @@
   margin: 0 ;
   padding: 0px;
   text-align: center;
-  background-color: #ffff;
-  border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: #ece6fa;
 }
 
 .home-image {
@@ -18,15 +16,17 @@
   height:88vh;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
+  object-fit: cover;
 }
 
 
 .overlay-text h1{
   position: absolute;
-  top: 65%;
+  top: 60%;
   left: 24%;
   right: 38%;
   transform: translate(-50%, -50%);
+  font-family: "Montserrat";
   color: #ffff;
   font-size: 52px;
   font-weight: bold;
@@ -35,16 +35,24 @@
 
 .site-images{
   border-top: 0.1px solid #F4B9BA;
-  margin-top: 20px;
+  margin: 20px;
 }
 
 
 .site-text{
   text-align: left;
-  font-family: poppins;
-  font-size:50px;
-  font-weight: 100;
-  padding: 30px 50px;
+  font-family: "poppins";
+  font-size:47px;
+  font-weight: 300;
+  padding: 30px 77px;
+  color: #493d56;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 45px;
+  padding: 20px 70px;
 }
 
 

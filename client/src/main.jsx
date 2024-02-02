@@ -16,8 +16,6 @@ root.render(
 <div><Navbar/></div>
 
 <Routes>
-  <Route path="/navbar" element={<p>hiiiiii</p>} />
-  <Route path="/footer" element={<App/>} />
   <Route path="/about" element={<About/>} />
   <Route path="/contact" element={<Contact/>} />  
   <Route path="/" element={<Home/>} />
