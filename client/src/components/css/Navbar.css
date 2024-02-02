@@ -4,11 +4,14 @@ body {
   }
   
   .navbar-container {
-    background-color: #f4ecec;
+    background-color: #ffff;
     padding: 10px;
     color: white;
     display: flex;
     justify-content: space-between; /* Aligns items to the start and end of the container */
+    border-bottom: 0.1px solid grey;
+    position: sticky ;
+    box-shadow: 2px;
   }
   
   .logo {
@@ -33,14 +36,14 @@ body {
   
   .navbar-link {
     display: block;
-    color: rgb(127, 95, 95);
+    color: #F4B9BA;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
   }
   
   .navbar-link:hover {
-    background-color: #ddd;
+    background-color: #eae3e3;
     color: black;
     border-radius: 20px; /* Add rounded corners on hover */
   }
