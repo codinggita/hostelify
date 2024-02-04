@@ -36,10 +36,11 @@ body {
   
   .navbar-link {
     display: block;
-    color: #F4B9BA;
+    color: #493d56;
     text-align: center;
-    padding: 14px 16px;
+    padding: 11px 16px;
     text-decoration: none;
+    font-size: 18px;
   }
   
   .navbar-link:hover {
