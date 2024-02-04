@@ -12,29 +12,30 @@
 
 footer{
     position: relative;
-    width: 100%;
+    width: 96.5%;
     height: auto;
     padding: 40px;
-    background: #fff;
+    background: #ffff;
 }
 
 .footer-container{
-  border-top: 1px solid #493d56;
-    width: 96.5%;
+  border-top: 1px solid #ffff;
+    width: 70;
     display: grid;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 100px;
     padding: 25px;
 } 
 
-.sec h2{
+
+.footer-container.sec:h2{
     position: relative;
     color:#493d56;
     font-weight: 600;
     margin-bottom: 15px;
 }
 
-.sec p{
+.footer-container.sec:p{
     color: #493d56;
 }
 
