@@ -6,12 +6,15 @@ const Footer = () => {
   return (<>
         <footer class="footer-container">
             <div class="sec">
-                <h2>About Us</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                    Ratione tenetur necessitatibus ab enim asperiores aut optio est, 
-                    iste ipsam, delectus eum maiores voluptatem eveniet rerum earum corporis 
-                    doloremque sit expedita.
-                </p>
+            <div class="quicklinks">
+                <h2>Shop</h2>
+                <ul>
+                    <li><a href="#">Men</a></li>
+                    <li><a href="#">Women</a></li>
+                    <li><a href="#">Kids</a></li>
+                    <li><a href="#">Shoes</a></li>
+                </ul>
+            </div>
                 <ul class="sci">
                     <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                     <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
