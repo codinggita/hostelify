@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       </div>
       <section id="keypoints" class="margin-7">
-        <div class="site-text">
+        <div class="featured-text">
           Featured
         </div>
         <div class="keypoints">
