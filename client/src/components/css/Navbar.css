@@ -5,7 +5,7 @@ body {
   
   .navbar-container {
     background-color: #ffff;
-    padding: 10px;
+    padding-top: 10px;
     color: white;
     display: flex;
     justify-content: space-between; /* Aligns items to the start and end of the container */
@@ -16,6 +16,13 @@ body {
   
   .logo {
     text-align: left;
+    margin-left: 40px;
+  }
+  .logo-img {
+    padding: 6px 5px;
+    width: 125px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle;
   }
   
   /* nav {
@@ -24,7 +31,8 @@ body {
   
   .navbar-list {
     list-style-type: none;
-    margin: 0;
+    margin: 0px;
+    margin-right: 10px;
     padding: 0;
     overflow: hidden;
     text-align: right; /* Align menu items to the right */
