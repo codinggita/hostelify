@@ -1,0 +1,8 @@
+about-container {
+    /* max-width:fit-content; */
+    height: max-content;
+    margin: 0 ;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffff;
+  }
