@@ -10,29 +10,39 @@
     background-color: #222; /* Add background color 
   } */
 
-footer{
+/* footer{
     position: relative;
-    width: 96.5%;
+    width: 27rem;
     height: auto;
     padding: 40px;
     background: #ffff;
-}
+} */
 
-.footer-container{
+.footer-container {
+    background-color: #ffff;
+    padding: 1rem 4.5rem 0.1rem 4.2rem;
+    display: flex;
+    justify-content: space-between; /* Aligns items to the start and end of the container */
+    border-bottom: 0.1px solid grey;
+    position: sticky ;
+    margin: 0px 10px;
+  }
+
+/* .footer-container{
   border-top: 1px solid #ffff;
     width: 70;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 100px;
     padding: 25px;
-} 
+}  */
 
 
 .footer-container.sec:h2{
     position: relative;
     color:#493d56;
     font-weight: 600;
-    margin-bottom: 15px;
+    margin-bottom: 1.5rem;
 }
 
 .footer-container.sec:p{
@@ -40,9 +50,9 @@ footer{
 }
 
 .sci{
-    margin-top: 20px;
+    margin-top: 2rem;
     display: grid;
-    grid-template-columns: repeat(4 ,50px);
+    grid-template-columns: repeat(4 ,5rem);
 }
 
 .sci li{
@@ -51,8 +61,8 @@ footer{
 
 .sci li a{
     display: inline-block;
-    width: 36px;
-    height: 36px;
+    width: 3.6rem;
+    height: 3.6rem;
     background: #493d56;
     display: grid;
     align-content: center;
@@ -62,7 +72,7 @@ footer{
 
 .sci li a i{
     color: white;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .quicklinks{
@@ -76,7 +86,7 @@ footer{
 .quicklinks ul li a{
     color: #493d56;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 0.8rem;
     display: inline-block;
 }
 
@@ -102,17 +112,18 @@ footer .container .contact .info li a{
 
 
 .copyrightText{
-    width: 85.5.7%;
+    width: 83.rem;
+    height: 1rem;
     background: #fff;
-    padding: 0px 100px 0px;
+    padding: 0rem 100rem 1rem ;
     text-align: center;
     color: #493d56;
     border-top: 1px solid #493d56;
 }
 
-@media (max-width: 990px){
+@media (max-width: 990vh){
     footer{
-        padding: 40px;
+        padding: 4rem;
     }  
     .container{
         width: 100%;

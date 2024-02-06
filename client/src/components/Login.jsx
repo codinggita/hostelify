@@ -9,7 +9,7 @@ import logo from '../assets/img/logo.png'
 function Login() {
   return (
     <div className="page-sep">
-    <div className="container">
+    <div className="login-container">
       {/* <div id="formDiv"> */}
       <form action="" method="post" className="row-4">
         <Link to={"/"} className="lb">
@@ -62,7 +62,7 @@ function Login() {
           </a>
         </div> */}
         <div style={{ margin: "auto", color: "white" }}>
-          <span className="foot">Forgot password?</span> &nbsp; | &nbsp;{" "}
+        &nbsp; | &nbsp;{" "} <span className="foot">Forgot password?</span> &nbsp; | &nbsp;{" "}
           {/* New User */}
           {/* <span className="foot" id="signup" onclick="toogleName()">
             New user? Sign up

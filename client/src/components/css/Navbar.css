@@ -5,22 +5,19 @@ body {
   
   .navbar-container {
     background-color: #ffff;
-    padding-top: 10px;
-    color: white;
+    padding: 0.3rem;
     display: flex;
     justify-content: space-between; /* Aligns items to the start and end of the container */
-    border-bottom: 0.1px solid grey;
     position: sticky ;
-    box-shadow: 2px;
   }
   
   .logo {
     text-align: left;
-    margin-left: 40px;
+    margin-left: 4rem;
   }
   .logo-img {
-    padding: 6px 5px;
-    width: 125px; /* Adjust the width as needed */
+    padding: 0.3rem 0.5rem;
+    width: 8rem; /* Adjust the width as needed */
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle;
   }
@@ -32,8 +29,8 @@ body {
   .navbar-list {
     list-style-type: none;
     margin: 0px;
-    margin-right: 10px;
-    padding: 0;
+    margin-right: 1rem;
+    padding: 0px;
     overflow: hidden;
     text-align: right; /* Align menu items to the right */
   }
@@ -46,14 +43,14 @@ body {
     display: block;
     color: #493d56;
     text-align: center;
-    padding: 11px 16px;
+    padding: 0.8rem 1.6rem;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 1.1rem;
   }
   
   .navbar-link:hover {
-    background-color: #eae3e3;
+    background-color: #f6f0f0;
     color: black;
-    border-radius: 20px; /* Add rounded corners on hover */
+    border-radius: 2rem; /* Add rounded corners on hover */
   }
   
