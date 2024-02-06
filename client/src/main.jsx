@@ -9,6 +9,7 @@ import About from './components/About.jsx';
 import Home from './components/Home.jsx'
 import Contact from './components/Contact.jsx';
 import Login from './components/Login.jsx';
+import BookNow from './components/BookNow.jsx';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
   <Route path="/contact" element={<Contact/>} />  
   <Route path="/" element={<Home/>} />
   <Route path="/login" element={<Login/>} />
+  <Route path="/booking" element={<BookNow/>} />
 </Routes>
 <Footer/>
 </BrowserRouter>
