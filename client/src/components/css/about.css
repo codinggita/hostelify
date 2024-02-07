@@ -1,8 +1,21 @@
-about-container {
-    /* max-width:fit-content; */
-    height: max-content;
-    margin: 0 ;
-    padding: 10px;
-    text-align: center;
-    background-color: #ffff;
-  }
+/* about.css */
+
+.about-container {
+  background-color: #ffff;
+  background-size: cover;
+  background-position: center;
+  padding: 10rem;
+  color: #000000; /* Text color for better readability */
+}
+
+.about-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-container p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Add any other custom styles as needed */
