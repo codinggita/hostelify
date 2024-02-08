@@ -10,12 +10,13 @@ import Home from './components/Home.jsx'
 import Contact from './components/Contact.jsx';
 import Login from './components/Login.jsx';
 import BookNow from './components/BookNow.jsx';
-
+import StudentsData from './components/studentsData.jsx';
+import SearchStudent from './components/searchStudent.jsx'; 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <BrowserRouter>
-<div><Navbar/></div>
+<Navbar/>
 
 <Routes>
   <Route path="/about" element={<About/>} />
@@ -23,6 +24,8 @@ root.render(
   <Route path="/" element={<Home/>} />
   <Route path="/login" element={<Login/>} />
   <Route path="/book" element={<BookNow/>} />
+  <Route path="/students" element={<StudentsData/>} />
+  <Route path='/search' element={<SearchStudent/>} />
 </Routes>
 <Footer/>
 </BrowserRouter>
