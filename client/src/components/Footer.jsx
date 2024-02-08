@@ -31,11 +31,11 @@ const Footer = () => {
                 <h2>Contact Us</h2>
                 <ul className="info">
                     <li>
-                        <span><i class="fa-solid fa-phone"></i></span>
+                        <span><i className="fa-solid fa-phone"></i></span>
                         <p><a href="tel:+91-7073722268">7073722268</a></p>
                     </li>
                     <li>
-                        <span><i class="fa-solid fa-envelope"></i></span>
+                        <span><i className="fa-solid fa-envelope"></i></span>
                         <p><a href="mailto:sumitsingh1339@gmail.com">sumitsingh1339@gmail.com</a></p>
                     </li>
                 </ul>
@@ -44,7 +44,7 @@ const Footer = () => {
         </footer>
         </div>
         
-    <div class="copyrightText">
+    <div className="copyrightText">
         <p>Copyright &copy; 2024 New Website. All Rights Reserved.</p>
     </div>
     </>
