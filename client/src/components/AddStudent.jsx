@@ -1,41 +1,6 @@
 import React from 'react'
 import './css/Book.css';
-import { useState} from 'react';
-import axios from 'axios';
-
-function BookNow() {
-   // Initialize state for course data
-   const [courseData, setCourseData] = useState({
-    courseId: '',
-    course: '',
-    cohort: '',
-    college: '',
-    semester: '',
-  });
-
-  // Handle changes in input fields and update the state
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setCourseData({ ...courseData, [name]: value });
-  };
-
-  // Handle form submission
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    
-    // Send a POST request to add a new course using Axios
-    axios.post('http://localhost:8000/courses', courseData)
-      .then((response) => {
-        // Successful response handling
-        console.log('Course added successfully.');
-        // You can redirect to another page or update the UI as needed here
-      })
-      .catch((error) => {
-        // Error handling
-        console.error('Error adding course:', error);
-      });
-  };
-
+function AddStudent() {
   return (
     <div>
         <div className="header-frame">
@@ -218,9 +183,4 @@ function BookNow() {
   )
 }
 
-export default BookNow
-
-
-
-
-
+export default AddStudent;

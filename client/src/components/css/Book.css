@@ -944,7 +944,7 @@ body {
     background-color: var(--color-gainsboro);
     display: none;
   }
-  .submit {
+  .submit-book {
     height: 2.81rem;
     flex: 1;
     font-size: 2.5rem;

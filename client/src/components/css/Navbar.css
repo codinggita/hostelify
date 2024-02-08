@@ -21,10 +21,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     vertical-align: middle;
   }
-  
-  /* nav {
-    background-color: #a89999;
-  } */
+ 
   
   .navbar-list {
     list-style-type: none;
