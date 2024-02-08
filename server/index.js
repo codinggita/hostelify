@@ -107,11 +107,11 @@ let hostel=
   ],
 };
 
-app.get("/students", (req,res) =>{
+app.get("/hostel", (req,res) =>{
   res.json(hostel.Students);
 })
 
-app.get("/students/:studentName", (req, res) => {
+app.get("/hostel/:Name", (req, res) => {
   const students = hostel.Students.find((c) => c.Name === req.params.studentName);
   if (!students) {
     res.status(404).send("Student not found");

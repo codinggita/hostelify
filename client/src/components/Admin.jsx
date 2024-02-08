@@ -8,8 +8,8 @@ import trusted from "../assets/img/trusted.png"
 
 
 
-const Home = () => {
-  const imageURL='http://scontent.fixc4-3.fna.fbcdn.net/v/t1.6435-9/93272843_101394028216928_5292488658975195136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=7V1Zgxn4OAwAX9VO8cq&_nc_ht=scontent.fixc4-3.fna&oh=00_AfB4-b8_s_fGd-zQybMgArShOKwhHOfJSRCDDQ_fmPlZGw&oe=65E28221';
+const Admin = () => {
+  const imageURL='https://scontent.fixc4-3.fna.fbcdn.net/v/t1.6435-9/93272843_101394028216928_5292488658975195136_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=7f8c78&_nc_ohc=7V1Zgxn4OAwAX9VO8cq&_nc_ht=scontent.fixc4-3.fna&oh=00_AfB4-b8_s_fGd-zQybMgArShOKwhHOfJSRCDDQ_fmPlZGw&oe=65E28221';
   return (
     <div className="home-container">
       <div className='home-image'>
@@ -71,4 +71,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Admin;

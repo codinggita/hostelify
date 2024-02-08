@@ -7,26 +7,32 @@ import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
 import About from './components/About.jsx';
 import Home from './components/Home.jsx'
-import Contact from './components/Contact.jsx';
 import Login from './components/Login.jsx';
 import BookNow from './components/BookNow.jsx';
 import StudentsData from './components/studentsData.jsx';
 import SearchStudent from './components/searchStudent.jsx'; 
+import Admin from './components/admin.jsx';
+import Nav from './components/Nav.jsx';
+import AddStudent from './components/AddStudent.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <BrowserRouter>
-<Navbar/>
+
 
 <Routes>
-  <Route path="/about" element={<About/>} />
-  <Route path="/contact" element={<Contact/>} />  
-  <Route path="/" element={<Home/>} />
-  <Route path="/login" element={<Login/>} />
-  <Route path="/book" element={<BookNow/>} />
-  <Route path="/students" element={<StudentsData/>} />
-  <Route path='/search' element={<SearchStudent/>} />
+  <Route path="/about" element={<><Navbar/><About/></>} />
+  <Route path="/" element={<><Navbar/><Home/></>} />
+  <Route path="/login" element={<><Navbar/><Login/></>} />
+  <Route path="/book" element={<><Navbar/><BookNow/></>} />
+  <Route path="/students" element={<><Navbar/><StudentsData/></>} />
+  <Route path='/search' element={<><Navbar/><SearchStudent/></>} />
+  <Route path='/admin' element={<><Nav/><Admin/></>} />
+  <Route path="/add" element={<><Nav/><AddStudent/></>} />
 </Routes>
 <Footer/>
 </BrowserRouter>
 );
+
+
+

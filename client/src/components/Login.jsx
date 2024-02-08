@@ -3,7 +3,6 @@ import './css/login.css';
 import { Link } from 'react-router-dom';
 import User from '../assets/img/user.png';
 import lock from '../assets/img/lock.png';
-import glogo from '../assets/img/g.png';
 import logo from '../assets/img/logo.png'
 
 function Login() {
@@ -52,15 +51,6 @@ function Login() {
         <div className="form-child">
           <input className="submit" type="submit" defaultValue="Login" />
         </div>
-        {/* {/* <div className="form-child">                             Google login 
-          <h4 id="or">or</h4>
-          <a  className="logoB">
-            <img className="logoB1" src={glogo} alt="" id="gLogo" />
-            <h3 className="logoB1" style={{ color: "white", fontSize: 18 }}>
-              Login with google
-            </h3>
-          </a>
-        </div> */}
         <div style={{ margin: "auto", color: "white" }}>
         &nbsp; | &nbsp;{" "} <span className="foot">Forgot password?</span> &nbsp; | &nbsp;{" "}
           {/* New User */}
@@ -69,10 +59,9 @@ function Login() {
           </span> */}
         </div>
       </form>
-      {/* </div> */}
     </div>
   </div>
   )
 }
 
-export default Login
+export default Login;

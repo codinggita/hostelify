@@ -6,7 +6,7 @@ function searchStudent() {
 
   useEffect(() => {
     // Fetch details of the specific course from the backend
-    axios.get('http://localhost:5000/students/Sumit')
+    axios.get('http://localhost:5000/students/:Name')
       .then((response) => {
         setStudent(response.data);
       })
