@@ -9,7 +9,6 @@ function Login() {
   return (
     <div className="page-sep">
     <div className="login-container">
-      {/* <div id="formDiv"> */}
       <form action="" method="post" className="row-4">
         <Link to={"/"} className="lb">
           <img src={logo} alt="" id="logo" />

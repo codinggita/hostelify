@@ -13,7 +13,7 @@ import StudentsData from './components/studentsData.jsx';
 import SearchStudent from './components/searchStudent.jsx'; 
 import Admin from './components/admin.jsx';
 import Nav from './components/Nav.jsx';
-import AddStudent from './components/AddStudent.jsx';
+import Add from './components/add.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,7 +28,7 @@ root.render(
   <Route path="/students" element={<><Navbar/><StudentsData/></>} />
   <Route path='/search' element={<><Navbar/><SearchStudent/></>} />
   <Route path='/admin' element={<><Nav/><Admin/></>} />
-  <Route path="/add" element={<><Nav/><AddStudent/></>} />
+  <Route path="/add" element={<><Nav/><Add/></>} />
 </Routes>
 <Footer/>
 </BrowserRouter>

@@ -112,12 +112,18 @@ app.get("/hostel", (req,res) =>{
 })
 
 app.get("/hostel/:Name", (req, res) => {
-  const students = hostel.Students.find((c) => c.Name === req.params.studentName);
+  const students = hostel.Students.find((c) => c.Name === req.params.Name);
   if (!students) {
     res.status(404).send("Student not found");
   } else {
     res.json(students);
   }
+});
+
+// POST - Add a new Student
+app.post("/hostel", (req, res) => {
+  hostel.Students.push(req.body);
+  res.send("Student added");
 });
 
 

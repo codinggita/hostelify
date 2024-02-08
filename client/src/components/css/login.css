@@ -141,12 +141,7 @@ input:focus{
     right: -90px;
     background-color: lightgrey;  
 }
-#gLogo{
-    height: 20px;
-    width: 20px;
-    padding-right: 20px;
-    padding-top: 4px;
-}
+
 .logoB{
     margin-top: 10px;
     margin-right: 10px;
