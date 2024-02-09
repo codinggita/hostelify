@@ -22,11 +22,12 @@ root.render(
 
 <Routes>
   <Route path="/about" element={<><Navbar/><About/></>} />
+  <Route path="/abouta" element={<><Nav/><About/></>} />
   <Route path="/" element={<><Navbar/><Home/></>} />
   <Route path="/login" element={<><Navbar/><Login/></>} />
   <Route path="/book" element={<><Navbar/><BookNow/></>} />
-  <Route path="/students" element={<><Navbar/><StudentsData/></>} />
-  <Route path='/search' element={<><Navbar/><SearchStudent/></>} />
+  <Route path="/students" element={<><Nav/><StudentsData/></>} />
+  <Route path='/search' element={<><Nav/><SearchStudent/></>} />
   <Route path='/admin' element={<><Nav/><Admin/></>} />
   <Route path="/add" element={<><Nav/><Add/></>} />
 </Routes>

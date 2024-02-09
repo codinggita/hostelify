@@ -1,6 +1,7 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
 import axios from 'axios';
+import './css/login.css';
 function add() {
   const [studentData, setStudentData] = useState({
       Name: "",
@@ -43,8 +44,8 @@ function add() {
     <div>
       <h1>Add Student</h1>
       <form onSubmit={handleSubmit}>
-      <div>
-  <label>Student Name:</label>
+    <div className='Nam'>
+      <label className='label'>Student Name:</label>
   <input
    className="credential sub"
     type="text"
@@ -55,9 +56,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Date of Birth:</label>
   <input
+  className="credential sub"
+  placeholder="Enter DOB"
     type="text"
     name="DOB"
     value={studentData.DOB}
@@ -65,9 +68,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Gender:</label>
   <input
+  className="credential sub"
+  placeholder="Select Gender"
     type="text"
     name="Gender"
     value={studentData.Gender}
@@ -75,9 +80,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Contact:</label>
   <input
+  className="credential sub"
+  placeholder="Enter Mob. No."
     type="number"
     name="Contact"
     value={studentData.Contact}
@@ -85,9 +92,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Address:</label>
   <input
+  className="credential sub"
+  placeholder="Enter address"
     type="text"
     name="Address"
     value={studentData.Address}
@@ -95,9 +104,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Registration Number:</label>
   <input
+  className="credential sub"
+  placeholder="Enter Reg. No."
     type="text"
     name="Reg_No"
     value={studentData.Reg_No}
@@ -105,9 +116,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Course:</label>
   <input
+  className="credential sub"
+  placeholder="Enter Course"
     type="text"
     name="Course"
     value={studentData.Course}
@@ -115,9 +128,11 @@ function add() {
     required
   />
 </div>
-<div>
-  <label>Batch:</label>
+<div className='Nam'>
+  Batch:
   <input
+  className="credential sub"
+  placeholder="Enter Batch"
     type="text"
     name="Batch"
     value={studentData.Batch}
@@ -125,9 +140,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Hostel Alloted:</label>
   <input
+  className="credential sub"
+  placeholder="Hostel to be Alloted"
     type="text"
     name="Hostel_Alloted"
     value={studentData.Hostel_Alloted}
@@ -135,9 +152,11 @@ function add() {
     required
   />
 </div>
-<div>
+<div className='Nam'>
   <label>Room Number:</label>
   <input
+  className="credential sub"
+  placeholder="Enter Room. NO."
     type="text"
     name="Room_No"
     value={studentData.Room_No}
@@ -146,7 +165,7 @@ function add() {
   />
 </div>
 
-        <button type="submit">Add Student</button>
+        <button className="submit" type="submit">Add Student</button>
       </form>
     </div>
   );

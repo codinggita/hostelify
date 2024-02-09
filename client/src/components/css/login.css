@@ -2,8 +2,11 @@
     font-family: 'poppins', sans-serif;
     transition: all;
     transition-duration: 0.3s;
-}   
+}    
 
+.Nam{
+    color:azure
+}
 .page-sep{
     display: grid;
     background-position: center center;
@@ -23,6 +26,7 @@ form{
     left: 0;
     bottom: 0;
     margin: auto;
+    margin-bottom: 3rem;
     display: grid;
     padding: 50px 50px 30px;
     background-color: #252424e6;
