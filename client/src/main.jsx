@@ -11,7 +11,7 @@ import Login from './components/Login.jsx';
 import BookNow from './components/BookNow.jsx';
 import StudentsData from './components/studentsData.jsx';
 import SearchStudent from './components/searchStudent.jsx'; 
-import Admin from './components/admin.jsx';
+import Admin from './components/Admin.jsx';
 import Nav from './components/Nav.jsx';
 import Add from './components/add.jsx';
 
