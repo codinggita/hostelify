@@ -1,33 +1,24 @@
 import React from 'react'
 import './css/login.css';
-import { Link } from 'react-router-dom';
+import { Link , useNavigate} from 'react-router-dom';
 import User from '../assets/img/user.png';
 import lock from '../assets/img/lock.png';
 import logo from '../assets/img/logo.png'
 
 function Login() {
+  const navigate=useNavigate();
+  const handleSubmit=(e)=>{
+    e.preventDefault();
+    navigate('/admin');
+  }
+
   return (
     <div className="page-sep">
     <div className="login-container">
-      <form action="" method="post" className="row-4">
+    <form onSubmit={handleSubmit} className="row-4">
         <Link to={"/"} className="lb">
           <img src={logo} alt="" id="logo" />
           </Link>
-        
-        <div className="form-child" id="name-data" style={{ display: "none" }}>
-          <input
-            className="credential sub"
-            type="text"
-            name="username"
-            placeholder="First Name"
-          />
-          <input
-            className="credential sub"
-            type="text"
-            name="username"
-            placeholder="Last Name"
-          />
-        </div>
         <div className="form-child">
           <img src={User} alt="" className="icon" />
           <input
@@ -35,7 +26,7 @@ function Login() {
             type="text"
             name="username"
             placeholder="username"
-            required=""
+            required="true"
           />
         </div>
         <div className="form-child">
@@ -45,6 +36,7 @@ function Login() {
             type="password"
             name="password"
             placeholder="password"
+            required="true"
           />
         </div>
         <div className="form-child">
@@ -52,10 +44,6 @@ function Login() {
         </div>
         <div style={{ margin: "auto", color: "white" }}>
         &nbsp; | &nbsp;{" "} <span className="foot">Forgot password?</span> &nbsp; | &nbsp;{" "}
-          {/* New User */}
-          {/* <span className="foot" id="signup" onclick="toogleName()">
-            New user? Sign up
-          </span> */}
         </div>
       </form>
     </div>

@@ -8,7 +8,7 @@ const Footer = () => {
         <footer className="footer-container">
             <div className="sec">
             <div className="quicklinks">
-                <h2>Site Navigation</h2>
+                <h2 >Site Navigation</h2>
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"/about"}>About Us</Link></li>
@@ -45,7 +45,7 @@ const Footer = () => {
         </div>
         
     <div className="copyrightText">
-        <p>Copyright &copy; 2024 New Website. All Rights Reserved.</p>
+        <p>Copyright &copy; 2024 Hostel. All Rights Reserved.</p>
     </div>
     </>
   );

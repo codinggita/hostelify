@@ -7,8 +7,6 @@
     justify-content: space-between; /* Aligns items to the start and end of the container */
     border-bottom: 0.1px solid grey;
     position: sticky ;
-    margin: 0rem 5rem;
-    box-shadow: 0px 0px 4px 0px grey;
   }
 
 
