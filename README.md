@@ -7,6 +7,9 @@
 ### Frontend Deployement link :-
 https://hostelify.netlify.app/
 
+### Project Demo video link :-
+https://drive.google.com/uc?id=1W8wSM8LgUKRO658RHklmrVo97GQxaAD5&export=download
+
 
 Problem Statement
 
