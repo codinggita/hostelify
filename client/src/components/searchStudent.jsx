@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './css/login.css'
 
 function SearchStudent() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -19,12 +20,13 @@ function SearchStudent() {
   return (
     <div>
       <input
+      
         type="text"
         placeholder="Enter student name"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button onClick={handleSearch}>Search</button>
+      <button className='submit' onClick={handleSearch}>Search by name</button>
 
       {student && (
         <div>

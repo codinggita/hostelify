@@ -60,7 +60,7 @@ function add() {
   <input
   className="credential sub"
   placeholder="Enter DOB"
-    type="text"
+    type="date"
     name="DOB"
     value={studentData.DOB}
     onChange={handleChange}
@@ -140,7 +140,7 @@ function add() {
   />
 </div>
 <div className='Nam'>
-  <label>Hostel Alloted:</label>
+  <label>Hostel Preference:</label>
   <input
   className="credential sub"
   placeholder="Hostel to be Alloted"
@@ -152,7 +152,7 @@ function add() {
   />
 </div>
 <div className='Nam'>
-  <label>Room Number:</label>
+  <label>Room No. Preferred:</label>
   <input
   className="credential sub"
   placeholder="Enter Room. NO."

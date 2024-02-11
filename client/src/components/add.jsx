@@ -2,6 +2,7 @@ import React from 'react'
 import { useEffect,useState } from 'react';
 import axios from 'axios';
 import './css/login.css';
+
 function add() {
   const [studentData, setStudentData] = useState({
       Name: "",
@@ -61,7 +62,7 @@ function add() {
   <input
   className="credential sub"
   placeholder="Enter DOB"
-    type="text"
+    type="date"
     name="DOB"
     value={studentData.DOB}
     onChange={handleChange}
@@ -109,7 +110,7 @@ function add() {
   <input
   className="credential sub"
   placeholder="Enter Reg. No."
-    type="text"
+    type="number"
     name="Reg_No"
     value={studentData.Reg_No}
     onChange={handleChange}
