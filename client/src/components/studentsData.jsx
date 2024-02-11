@@ -23,16 +23,16 @@ const StudentsData = () => {
     <div>
       <h1>Student Details</h1>
       <ul>
-        {students.map((student) => (
-          <li key={student.id}>
-            <strong>Reg No:</strong> {student.Reg_No}
+        {students.map((Students) => (
+          <li key={Students.id}>
+            <strong>Reg No:</strong> {Students.Reg_No}
             <br />
-            <strong>Name:</strong> {student.Name}
+            <strong>Name:</strong> {Students.Name}
             <br />
            
-            <strong>Course:</strong> {student.Course}
+            <strong>Course:</strong> {Students.Course}
             <br />
-            <strong>Hostel Alloted:</strong> {student.Hostel_Alloted}
+            <strong>Hostel Alloted:</strong> {Students.Hostel_Alloted}
             <br />
             <br />
           </li>
