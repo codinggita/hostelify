@@ -92,7 +92,7 @@ footer .container .contact .info li a{
         padding: 4rem;
     }  
     .container{
-        width: 100%;
+        width: 97%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 20px;
@@ -104,7 +104,7 @@ footer .container .contact .info li a{
 
 @media (max-width: 768px){
     footer .container{
-        width: 100%;
+        width: 97%;
         display: grid;
         grid-template-columns: repeat(2,1fr);
         grid-gap: 20px;
