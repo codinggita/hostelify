@@ -1,18 +1,22 @@
 import React from 'react'
 import { useEffect,useState } from 'react';
 import axios from 'axios';
-function add() {
+function BookNow() {
   const [studentData, setStudentData] = useState({
-      Name: "",
-      DOB: "",
-      Gender: "",
-      Contact: 0,
-      Address: "",
-      Reg_No: "",
-      Course: "",
-      Batch: "",
-      Hostel_Alloted: "",
-      Room_No: "",
+    reg_no:0,  
+    name: "",
+    contact: 0,
+    email:"",
+    address: "",
+    gender: "",
+    father:"",
+    program:"",
+    specialization:"",
+    year:"",
+    semester:"",
+    cgpa:"",
+    hostel:"",
+    room:""
   });
 
   // Handle changes in input fields and update the state
@@ -26,7 +30,7 @@ function add() {
     e.preventDefault();
     
     // Send a POST request to add a new course using Axios
-    axios.post('http://localhost:5000/hostel', studentData)
+    axios.post('http://localhost:5000/students', studentData)
       .then((response) => {
         console.log(studentData);
         // Successful response handling
@@ -43,112 +47,184 @@ function add() {
     <div>
       <h1>Add Student</h1>
       <form onSubmit={handleSubmit}>
+
+      <div className='Nam'>
+  <label>Registration Number:</label>
+  <input
+  className="credential sub"
+  placeholder="Enter Reg. No."
+    type="Number"
+    name="reg_no"
+    value={studentData.reg_no}
+    onChange={handleChange}
+    required
+  />
+</div>
+
     <div className='Nam'>
       <label className='label'>Student Name:</label>
   <input
    className="credential sub"
     type="text"
-    name="Name"
-    value={studentData.Name}
+    name="name"
+    value={studentData.name}
     onChange={handleChange}
     placeholder="Name"
     required
   />
 </div>
-<div className='Nam'>
-  <label>Date of Birth:</label>
-  <input
-  className="credential sub"
-  placeholder="Enter DOB"
-    type="date"
-    name="DOB"
-    value={studentData.DOB}
-    onChange={handleChange}
-    required
-  />
-</div>
-<div className='Nam'>
-  <label>Gender:</label>
-  <input
-  className="credential sub"
-  placeholder="Select Gender"
-    type="text"
-    name="Gender"
-    value={studentData.Gender}
-    onChange={handleChange}
-    required
-  />
-</div>
+
 <div className='Nam'>
   <label>Contact:</label>
   <input
   className="credential sub"
   placeholder="Enter Mob. No."
     type="number"
-    name="Contact"
-    value={studentData.Contact}
+    name="contact"
+    value={studentData.contact}
     onChange={handleChange}
     required
   />
 </div>
+
+<div className='Nam'>
+      <label className='label'>Email address:</label>
+  <input
+   className="credential sub"
+    type="text"
+    name="email"
+    value={studentData.email}
+    onChange={handleChange}
+    placeholder="enter email address"
+  />
+</div>
+
+<div className='Nam'>
+  <label>Date of Birth:</label>
+  <input
+  className="credential sub"
+  placeholder="Enter DOB"
+    type="date"
+    name="dob"
+    value={studentData.DOB}
+    onChange={handleChange}
+    required
+  />
+</div>
+
 <div className='Nam'>
   <label>Address:</label>
   <input
   className="credential sub"
   placeholder="Enter address"
     type="text"
-    name="Address"
-    value={studentData.Address}
+    name="address"
+    value={studentData.address}
     onChange={handleChange}
     required
   />
 </div>
+
 <div className='Nam'>
-  <label>Registration Number:</label>
+  <label>Gender:</label>
   <input
   className="credential sub"
-  placeholder="Enter Reg. No."
+  placeholder="Select Gender"
     type="text"
-    name="Reg_No"
-    value={studentData.Reg_No}
+    name="gender"
+    value={studentData.gender}
     onChange={handleChange}
     required
   />
 </div>
+
+<div className='Nam'>
+  <label>Father's Name:</label>
+  <input
+  className="credential sub"
+  placeholder="Enter Father name"
+    type="text"
+    name="father"
+    value={studentData.father}
+    onChange={handleChange}
+    required
+  />
+</div>
+
 <div className='Nam'>
   <label>Course:</label>
   <input
   className="credential sub"
   placeholder="Enter Course"
     type="text"
-    name="Course"
-    value={studentData.Course}
+    name="program"
+    value={studentData.program}
     onChange={handleChange}
     required
   />
 </div>
+
 <div className='Nam'>
-  Batch:
+  Specialization:
   <input
   className="credential sub"
-  placeholder="Enter Batch"
+  placeholder="Enter specialization"
     type="text"
-    name="Batch"
-    value={studentData.Batch}
+    name="specialization"
+    value={studentData.specialization}
     onChange={handleChange}
     required
   />
 </div>
+
+<div className='Nam'>
+  <label>Program Year:</label>
+  <input
+  className="credential sub"
+  placeholder="Enter year"
+    type="text"
+    name="year"
+    value={studentData.year}
+    onChange={handleChange}
+    required
+  />
+</div>
+
+<div className='Nam'>
+  <label>Semester:</label>
+  <input
+  className="credential sub"
+  placeholder="Enter Semester"
+    type="text"
+    name="semester"
+    value={studentData.semester}
+    onChange={handleChange}
+    required
+  />
+</div>
+
+<div className='Nam'>
+  <label>CGPA:</label>
+  <input
+  className="credential sub"
+  placeholder="Enter your current CGPA"
+    type="number"
+    name="cgpa"
+    value={studentData.cgpa}
+    onChange={handleChange}
+    required
+  />
+</div>
+
 <div className='Nam'>
   <label>Hostel Preference:</label>
   <input
   className="credential sub"
-  placeholder="Hostel to be Alloted"
+  placeholder="Enter desired Hostel "
     type="text"
-    name="Hostel_Alloted"
-    value={studentData.Hostel_Alloted}
+    name="hostel"
+    value={studentData.hostel}
     onChange={handleChange}
-    required
   />
 </div>
 <div className='Nam'>
@@ -157,10 +233,9 @@ function add() {
   className="credential sub"
   placeholder="Enter Room. NO."
     type="text"
-    name="Room_No"
-    value={studentData.Room_No}
+    name="room"
+    value={studentData.room}
     onChange={handleChange}
-    required
   />
 </div>
 
@@ -170,4 +245,4 @@ function add() {
   );
 }
 
-export default add;
+export default BookNow;

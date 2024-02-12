@@ -6,14 +6,15 @@ const StudentsData = () => {
 
   useEffect(() => {
     // Fetch student data from the backend API
-    axios.get("http://localhost:5000/hostel")
+    axios.get("http://localhost:5000/students")
       .then((response) => {
         setStudents(response.data);
+        console.log(response.data);
       })
       .catch((error) => {
         console.error("Error fetching student data:", error);
       });
-  }, []);
+}, []);
 
   if (!students) {
     return <div>Loading...</div>;
@@ -23,16 +24,16 @@ const StudentsData = () => {
     <div>
       <h1>Student Details</h1>
       <ul>
-        {students.map((Students) => (
-          <li key={Students.id}>
-            <strong>Reg No:</strong> {Students.Reg_No}
+        {students.map((students) => (
+          <li key={students._id}>
+            <strong>Reg No:</strong> {students.reg_no}
             <br />
-            <strong>Name:</strong> {Students.Name}
+            <strong>Name:</strong> {students.name}
             <br />
            
-            <strong>Course:</strong> {Students.Course}
+            <strong>Course:</strong> {students.program}
             <br />
-            <strong>Hostel Alloted:</strong> {Students.Hostel_Alloted}
+            <strong>Hostel Alloted:</strong> {students.hostel}
             <br />
             <br />
           </li>

@@ -12,7 +12,6 @@ const Footer = () => {
                 <ul>
                     <li><Link to={"/"}>Home</Link></li>
                     <li><Link to={"/about"}>About Us</Link></li>
-                    <li><Link to={"/contact"}>Contact Us</Link></li>
                     <li><Link to={"/login"}>Login</Link></li>
                 </ul>
             </div>
@@ -21,10 +20,9 @@ const Footer = () => {
             <div className="quicklinks">
                 <h2>Support</h2>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Help</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Help</a></li>
                 </ul>
             </div>
             <div className="quicklinks">

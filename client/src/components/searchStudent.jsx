@@ -8,7 +8,7 @@ function SearchStudent() {
 
   const handleSearch = () => {
     // Make an API request to fetch student details based on searchTerm
-    axios.get(`http://localhost:5000/hostel/${searchTerm}`)
+    axios.get(`http://localhost:5000/students/${searchTerm}`)
       .then((response) => {
         setStudent(response.data);
       })
@@ -19,32 +19,47 @@ function SearchStudent() {
 
   return (
     <div>
+      <label className='label'>Enter registration No.</label>
       <input
-      
         type="text"
         placeholder="Enter student name"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button className='submit' onClick={handleSearch}>Search by name</button>
+      <button className='submit' onClick={handleSearch}>Search.</button>
 
       {student && (
         <div>
-          <h1>Student Details</h1>
-          <strong>Reg No:</strong> {student.Reg_No}<br />
-          <strong>Name:</strong> {student.Name}<br />
-          <strong>Gender:</strong> {student.Gender}<br />
-          <strong>Contact:</strong> {student.Contact}<br />
-          <strong>Date of birth:</strong> {student.DOB}<br />
-          <strong>Address:</strong> {student.Address}<br />
-          <strong>Course:</strong> {student.Course}<br />
-          <strong>Batch:</strong> {student.Batch}<br />
-          <strong>Hostel:</strong> {student.Hostel_Alloted}<br />
-          <strong>Room No:</strong> {student.Room_No}<br />
-        </div>
-      )}
+         <h1>Student Details</h1>
+          <ul>
+          {student.map((students)=>(
+            <li key={students._id}>
+          <strong>Reg No:</strong> {students.reg_no}<br />
+          <strong>Name:</strong> {students.name}<br />
+          <strong>Gender:</strong> {students.gender}<br />
+          <strong>Contact:</strong> {students.contact}<br />
+          <strong>E-mail:</strong> {students.email}<br />
+          <strong>Father's Name:</strong> {students.father}<br />
+          <strong>Date of birth:</strong> {students.dob}<br />
+          <strong>Address:</strong> {students.address}<br />
+          <strong>Course:</strong> {students.program}<br />
+          <strong>Specialization:</strong> {students.specialization}<br />
+          <strong>Program Year:</strong> {students.year}<br />
+          <strong>Semester:</strong> {students.semester}<br />
+          <strong>CGPA:</strong> {students.cgpa}<br />
+           <strong>Hostel:</strong> {students.hostel}<br />
+          <strong>Room No:</strong> {students.room}<br /><br/>
+          {/* <div>
+            <button className='submit' >Update details</button>
+            <button className='submit' >Delete student</button>
+          </div> */}
+          </li>
+          ))}
+      </ul>
     </div>
-  );
+      )}
+    </div>)
+     
 }
 
 export default SearchStudent;
