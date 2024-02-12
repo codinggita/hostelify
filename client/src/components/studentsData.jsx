@@ -14,7 +14,7 @@ const StudentsData = () => {
       .catch((error) => {
         console.error("Error fetching student data:", error);
       });
-  }, []);
+}, []);
 
   if (!students) {
     return <div>Loading...</div>;

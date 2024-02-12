@@ -48,9 +48,9 @@ app.get("/students", async (req,res) =>{
 })
 
 
-app.get("/students/:name", async (req, res) => {
+app.get("/students/:reg_no", async (req, res) => {
   try {
-    const student = await HostelModel.find({ name: req.params.name });
+    const student = await HostelModel.find({ reg_no: req.params.reg_no });
     if (!student) {
       return res.status(404).json({ message: "Student not found" });
     }

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 
-function UpdateStudent() {
+function updateStudent() {
   const [studentData, setStudentData] = useState({
     reg_no: 0,
     name: "",
@@ -252,4 +252,4 @@ function UpdateStudent() {
  );
 }
 
-export default UpdateStudent;
+export default updateStudent;

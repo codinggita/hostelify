@@ -19,14 +19,14 @@ function SearchStudent() {
 
   return (
     <div>
+      <label className='label'>Enter registration No.</label>
       <input
-      
         type="text"
         placeholder="Enter student name"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
       />
-      <button className='submit' onClick={handleSearch}>Search by name</button>
+      <button className='submit' onClick={handleSearch}>Search.</button>
 
       {student && (
         <div>
@@ -49,10 +49,10 @@ function SearchStudent() {
           <strong>CGPA:</strong> {students.cgpa}<br />
            <strong>Hostel:</strong> {students.hostel}<br />
           <strong>Room No:</strong> {students.room}<br /><br/>
-          <div>
+          {/* <div>
             <button className='submit' >Update details</button>
             <button className='submit' >Delete student</button>
-          </div>
+          </div> */}
           </li>
           ))}
       </ul>

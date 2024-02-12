@@ -14,7 +14,7 @@ import SearchStudent from './components/searchStudent.jsx';
 import Admin from './components/Admin.jsx';
 import Nav from './components/Nav.jsx';
 import Add from './components/add.jsx';
-import UpdateStudent from './components/updateStudent.jsx';
+import UpdateStudent from './components/update.jsx';
 import {FAQ,privacy,help} from './components/FAQ.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

@@ -20,9 +20,9 @@ const Footer = () => {
             <div className="quicklinks">
                 <h2>Support</h2>
                 <ul>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Privacy</a></li>
-                    <li><a href="#">Help</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">Privacy</a></li>
+                    <li><a href="">Help</a></li>
                 </ul>
             </div>
             <div className="quicklinks">
