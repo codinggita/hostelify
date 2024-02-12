@@ -31,7 +31,7 @@ form{
     padding: 50px 50px 30px;
     background-color: #252424e6;
     border-radius: 30px;
-    height: 80vh;
+    height: auto;
     width: 335px;
     border: 2px solid white;
     box-shadow: 0 30px 30px -5px #161212e6;
@@ -106,7 +106,7 @@ input:focus{
 
 .submit:hover{
 
-    background-color: #47ec8b;
+    background-color: #493d56;
     color: white;
     border: 1px solid white;
 }
@@ -118,7 +118,7 @@ input:focus{
 }
 
 .foot:hover{
-    color: #47ec8b;
+    color: #493d56;
 }
 
 #or{

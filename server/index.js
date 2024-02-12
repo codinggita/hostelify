@@ -4,7 +4,7 @@ const app = express();
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 
-const uri = "mongodb://127.0.0.1:27017/hostel1"; 
+const uri = "mongodb+srv://sumit5166:sumit5166@hostel.wczoxof.mongodb.net/?retryWrites=true&w=majority"; 
 
 // Middleware to parse JSON body in requests
 app.use(bodyParser.json());
@@ -22,6 +22,7 @@ const HostelSchema= new mongoose.Schema({
   name: {type : String, required: true},
   contact: {type: Number, required: true},
   email : String,
+  dob:Date,
   address: {type: String, required:true},
   gender: String,
   father: {type: String, required:true},
@@ -59,7 +60,7 @@ app.get("/students/:name", async (req, res) => {
   }
 });
 
-app.get("/students/:hostel", async (req, res) => {
+app.get("/hostel/:hostel", async (req, res) => {
   try {
     const student = await HostelModel.find({ hostel: req.params.hostel });
     if (!student) {

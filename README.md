@@ -10,6 +10,9 @@ https://hostelify.netlify.app/
 ### Project Demo video link :-
 https://drive.google.com/uc?id=1W8wSM8LgUKRO658RHklmrVo97GQxaAD5&export=download
 
+### POSTMAN API Documentation 
+https://documenter.getpostman.com/view/21201660/2s9YymGQPZ
+
 
 Problem Statement
 
@@ -35,10 +38,8 @@ Hostelify is designed to streamline hostel management by offering the following 
  - Update Student Where abouts
  - Can take Attendance Daily
  - Display Attendance Details
- - Download Csv file of attendance
  - Delete Attendance of previous n days
  - Control User List
- - Edit User Admin Status
  - Data Controlled by only Admins
 
 
@@ -47,12 +48,7 @@ Hostelify is built using the MERN (MongoDB, Express.js, React, Node.js) stack,
 ensuring a scalable and efficient solution.
 
 
-### POSTMAN API Documentation 
-https://documenter.getpostman.com/view/21201660/2s9YymGQPZ
 
-### Netlify Deployement Link :
-
-https://hostelify.netlify.app/
 
 
 

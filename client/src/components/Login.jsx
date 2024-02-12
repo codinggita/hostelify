@@ -26,7 +26,7 @@ function Login() {
             type="text"
             name="username"
             placeholder="username"
-            required="true"
+            required={true}
           />
         </div>
         <div className="form-child">
@@ -36,7 +36,7 @@ function Login() {
             type="password"
             name="password"
             placeholder="password"
-            required="true"
+            required={true}
           />
         </div>
         <div className="form-child">

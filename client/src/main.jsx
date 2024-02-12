@@ -14,6 +14,8 @@ import SearchStudent from './components/searchStudent.jsx';
 import Admin from './components/Admin.jsx';
 import Nav from './components/Nav.jsx';
 import Add from './components/add.jsx';
+import UpdateStudent from './components/updateStudent.jsx';
+import {FAQ,privacy,help} from './components/FAQ.jsx';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -30,6 +32,10 @@ root.render(
   <Route path='/search' element={<><Nav/><SearchStudent/></>} />
   <Route path='/admin' element={<><Nav/><Admin/></>} />
   <Route path="/add" element={<><Nav/><Add/></>} />
+  <Route path= "/update" element={<><Nav/><UpdateStudent/></>} />
+  <Route path="/faq" element={<><Nav/><FAQ/></>} />
+  <Route path="/privacy" element={<><Nav/><privacy/></>} />
+  <Route path="/help" element={<><Nav/><help/></>} />
 </Routes>
 <Footer/>
 </BrowserRouter>

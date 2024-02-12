@@ -1,53 +1,58 @@
-import React from 'react'
-import { useEffect,useState } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
-function add() {
+
+function UpdateStudent() {
   const [studentData, setStudentData] = useState({
-    reg_no:0,  
+    reg_no: 0,
     name: "",
     contact: 0,
-    email:"",
+    email: "",
     address: "",
     gender: "",
-    father:"",
-    program:"",
-    specialization:"",
-    year:"",
-    semester:"",
-    cgpa:"",
-    hostel:"",
-    room:""
+    father: "",
+    program: "",
+    specialization: "",
+    year: "",
+    semester: "",
+    cgpa: "",
+    hostel: "",
+    room: ""
   });
 
-  // Handle changes in input fields and update the state
   const handleChange = (e) => {
     const { name, value } = e.target;
     setStudentData({ ...studentData, [name]: value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
-    // e.preventDefault();
+    e.preventDefault();
     
-    // Send a POST request to add a new course using Axios
-    axios.post('http://localhost:5000/students', studentData)
+
+    // Send a PUT request to update the student record
+    axios.put(`http://localhost:5000/students/${searchTerm}`, studentData)
       .then((response) => {
-        console.log(studentData);
-        // Successful response handling
-        console.log('Student added successfully.');
-        // You can redirect to another page or update the UI as needed here
+        console.log('Student updated successfully:', response.data);
+        // You can perform additional actions after successful update
       })
       .catch((error) => {
-        // Error handling
-        console.error('Error adding student:', error);
+        console.error('Error updating student:', error);
       });
   };
 
   return (
     <div>
-      <h1>Add Student</h1>
-      <form onSubmit={handleSubmit}>
+    <input
+    type="text"
+      placeholder="Enter student name"
+      value={searchTerm}
+      onChange={(e) => setSearchTerm(e.target.value)}
+    />
+    <button className='submit' onClick={handleSearch}>Search by name</button>
 
+    {studentData && (    
+    <div>
+      <h1>Update Student</h1>
+      <form onSubmit={handleSearch}>
       <div className='Nam'>
   <label>Registration Number:</label>
   <input
@@ -240,11 +245,11 @@ function add() {
     required
   />
 </div>
-
-        <button className="submit" type="submit">Add Student</button>
+        <button type="submit">Update Student</button>
       </form>
     </div>
-  );
+ )}</div>
+ );
 }
 
-export default add;
+export default UpdateStudent;
