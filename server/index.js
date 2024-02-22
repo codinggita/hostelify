@@ -10,7 +10,7 @@ const uri = "mongodb+srv://sumit5166:sumit5166@hostel.wczoxof.mongodb.net/?retry
 app.use(bodyParser.json());
 app.use(cors());
 
-const PORT = 5000;
+const PORT=5000;
 
 mongoose
   .connect(uri)
